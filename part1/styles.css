@@ -10,7 +10,8 @@ h1{
     animation: move-heading 3s linear infinite alternative;
 }
 @keyframes move-heading {
-    from {}
+    from {left:0;}
+    to {left:}
 }
 #app{
     width: 80vw;

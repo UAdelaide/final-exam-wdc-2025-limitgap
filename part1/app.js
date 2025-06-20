@@ -30,4 +30,4 @@ app.use('/users', usersRouter);
 
 module.exports = app;
 
-app.get('/api/dogs', async)
+app.get('/api/dogs', async(this.request,req))

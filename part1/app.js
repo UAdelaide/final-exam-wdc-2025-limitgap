@@ -10,7 +10,10 @@ var app = express();
 
 const mysql = require('mysql2/promise');
 
-const dbConfig
+const dbConfig={
+    host='localhost',
+    user:
+}
 
 app.use(logger('dev'));
 app.use(express.json());

@@ -11,13 +11,13 @@ var app = express();
 const mysql = require('mysql2/promise');
 
 const dbConfig={
-    host = 'localhost',
-    user = 'root',
-    password = '',
-    database = 'DogWalkService'
+    host:'localhost',
+    user:'root',
+    password:'',
+    database:'DogWalkService'
 };
 
-const db = 
+const db =
 
 app.use(logger('dev'));
 app.use(express.json());

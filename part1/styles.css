@@ -7,6 +7,7 @@ body{
 h1{
     color: white;
     background-color: yellow;
+    position: relative;
     animation: move-heading 3s linear infinite alternative;
 }
 @keyframes move-heading {

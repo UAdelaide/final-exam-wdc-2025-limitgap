@@ -49,6 +49,7 @@ let db;
     await db.execute(`
         CREATE TABLE IF NOT EXISTS Dogs(
         dog_id INT AUTO_INCREMENT PRIMARY KEY,
+        owner_id INT NOT NULL,
         )`)
 
     // Insert data if table is empty

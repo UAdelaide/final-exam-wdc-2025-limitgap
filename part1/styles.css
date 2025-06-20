@@ -21,7 +21,9 @@ body{
     28%  { background: #ffea00; }
     42%  { background: #ff0e0e; }
     57%  { background: #e67cff; }
-    
+    71%  { background: #ff9100; }
+    85%  { background: #17ff90; }
+    100% { background: #039c2c; }
 }
 dog-img{
     width: 180px;

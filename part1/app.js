@@ -10,7 +10,7 @@ var app = express();
 
 const mysql = require('mysql2/promise');
 
-
+const db
 
 app.use(logger('dev'));
 app.use(express.json());

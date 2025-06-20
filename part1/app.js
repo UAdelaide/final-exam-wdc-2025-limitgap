@@ -3,5 +3,7 @@ const mysql= require('mysql2/promise');
 const app = express();
 
 const dbconfig={
-    host:'localhost'
+    host:'localhost',
+    user:'root',
+    password
 }

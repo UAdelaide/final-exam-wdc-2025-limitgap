@@ -17,7 +17,7 @@ const dbConfig={
     database:'DogWalkService'
 };
 
-const db =
+const db = mysql.createPool(dbConfig);
 
 app.use(logger('dev'));
 app.use(express.json());

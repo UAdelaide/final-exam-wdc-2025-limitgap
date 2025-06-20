@@ -38,7 +38,7 @@
                             .then(data => {
                                 this.dogPic = data.message;
                                 const match = this.dogPic.match(/breeds\/([^\/]+)/);
-                                this.dogBreed=match
+                                this.dogBreed=match?match[1].replace(/-/)
                             })
                     }
                 }

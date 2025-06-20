@@ -13,5 +13,5 @@ body{
 dog-img{
     width: 180px;
     height: 180px;
-    
+    filter: blur(2px);
 }

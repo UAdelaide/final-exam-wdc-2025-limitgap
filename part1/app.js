@@ -95,7 +95,7 @@ app.get('/api/walkers/summary', async (req, res) => {
         SELECT Users.username AS walker_username, COUNT(WalkRatings.rating_id) AS total_ratings, AVG(WalkRatings.rating_id) AS average_rating,
         COUNT(DISTINCT CASE WHEN WalkRequests.status='completed' THEN WalkRequests.request_id END) AS completed_walks
         FROM Users LEFT JOIN WalkRatings ON Users.user_id=WalkRatings.walker_id
-        LEFT JOIN WalkRequests ON 
+        LEFT JOIN WalkRequests ON WalkRequests.request_id=WalkRequests.
         `);
     res.json(rows6);
   } catch (err) {

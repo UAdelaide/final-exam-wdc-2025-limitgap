@@ -97,7 +97,7 @@ app.get('/api/dogs', async (req, res) => {
   }
 });
 
-app.get('/', async (req, res) => {
+app.get('/api/walkrequests/open', async (req, res) => {
   try {
     const [books] = await db.execute('SELECT * FROM books');
     res.json(books);

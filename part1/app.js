@@ -1,7 +1,9 @@
 const express = require('express');
 const mysql= require('mysql2/promise');
 const app = express();
+
 const port=8080;
+app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
 
 const dbconfig={
     host:'localhost',

@@ -48,7 +48,8 @@ let db;
 
     await db.execute(`
         CREATE TABLE IF NOT EXISTS Dogs(
-        dog_id INT )`)
+        dog_id INT AUTO_INCREMENT PRIMARY KEY,
+        )`)
 
     // Insert data if table is empty
     const [rows] = await db.execute('SELECT COUNT(*) AS count FROM Dogs');

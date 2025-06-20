@@ -85,7 +85,7 @@ app.get('/api/walkrequests/open', async (req, res) => {
         `);
     res.json(rows5);
   } catch (err) {
-    res.status(500).json({ error: 'Failed to fetch books' });
+    res.status(500).json({ error: 'Failed to fetch walk requests' });
   }
 });
 

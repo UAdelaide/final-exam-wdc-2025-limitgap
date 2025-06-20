@@ -13,6 +13,7 @@ body{
     margin: 10px;
     border: 4px red;
     background: darkslategrey;
+    animation: flicker-bg;
 }
 dog-img{
     width: 180px;

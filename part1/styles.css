@@ -4,7 +4,7 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 h1{
-    fon
+    color: green;
 }
 #app{
     width: 80vw;

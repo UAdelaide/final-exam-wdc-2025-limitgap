@@ -14,8 +14,8 @@ const dbConfig={
     host = 'localhost',
     user = 'root',
     password = '',
-
-}
+    database = 'DogWalkService'
+};
 
 app.use(logger('dev'));
 app.use(express.json());

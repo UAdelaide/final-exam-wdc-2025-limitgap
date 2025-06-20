@@ -15,7 +15,7 @@
     <form @submit.prevent="login" class="mb-4" v-if="!loggedIn">
       <div class="mb-3">
         <label for="email" class="form-label">Email</label>
-        <iput v-model="email" 
+        <iput v-model="email" type="email" if="email"
       </div>
     </form>
     <a href="owner-dashboard.html" class="btn btn-outline-primary me-2">Owner Dashboard</a>

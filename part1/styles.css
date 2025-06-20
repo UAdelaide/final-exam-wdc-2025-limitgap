@@ -26,7 +26,8 @@ body{
     100% { background: #039c2c; }
 }
 dog-img{
-    width: 180px;
+    width: 75vw;
+    
     height: 180px;
     filter: blur(2px);
 }

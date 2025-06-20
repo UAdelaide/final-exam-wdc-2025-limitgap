@@ -37,7 +37,8 @@
                             .then(res => res.json())
                             .then(data => {
                                 this.dogPic = data.message;
-                                const match = this.dogPic.match(/breeds\/([^\/]+)/)
+                                const match = this.dogPic.match(/breeds\/([^\/]+)/);
+                                this.dogBreed=match
                             })
                     }
                 }

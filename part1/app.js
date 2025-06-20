@@ -30,4 +30,8 @@ app.use('/users', usersRouter);
 
 module.exports = app;
 
-app.get('/api/dogs', async(this.request, res)) => 
+app.get('/api/dogs', async(this.request, res)) => {
+    try{
+        const[rows] = await
+    }
+}

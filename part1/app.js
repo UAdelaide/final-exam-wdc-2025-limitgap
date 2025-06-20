@@ -32,6 +32,7 @@ module.exports = app;
 
 app.get('/api/dogs', async(this.request, res)) => {
     try{
-        const[rows] = await db.execute()
+        const[rows] = await db.execute(`
+            SELECT Dogs`)
     }
 }

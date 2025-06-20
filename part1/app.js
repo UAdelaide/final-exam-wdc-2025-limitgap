@@ -25,7 +25,7 @@ app.get('/api/dogs', async (req, res) => {
       SELECT Dogs.name AS dog_name, Dogs.size AS size, Users.username AS owner_username FROM Dogs
       JOIN Users ON Dogs.owner_id = Users.user_id`);
     res.json(rows);
-  } catch(err) {
+  } catch(err){
     res.status(500).json({ error: 'Database error', details: err.message });
   }
 });

@@ -15,7 +15,7 @@
                 <p><s>Breed: </s>{{ dogBreed }}</p>
             </div>
             <div class="user-interact">
-                <button onclick="fetchdog">Change dog</button>
+                <button onclick="fetchDog">Change dog</button>
             </div>
         </div>
         <script>
@@ -29,7 +29,7 @@
                     }
                 },
                 mounted(){
-                    
+                    this.fetchDog()
                 }
             })
         </script>

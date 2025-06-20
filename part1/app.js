@@ -22,8 +22,7 @@ app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
 app.get('/api/dogs', async (req, res) => {
   try {
     const [rows] = await db.execute(`
-      SELECT Dogs.name AS dog_name, Dogs.size AS ,
-        Users.username AS owner_username
+      SELECT Dogs.name AS dog_name, Dogs.size AS size, Users.username AS owner_username
       FROM Dogs
       JOIN Users ON Dogs.owner_id = Users.user_id
     `);

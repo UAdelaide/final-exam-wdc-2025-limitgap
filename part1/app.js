@@ -20,7 +20,7 @@ let db;
       host: 'localhost',
       user: 'root',
       password: '',
-      dat
+      database:''
     });
 
     // Create the database if it doesn't exist

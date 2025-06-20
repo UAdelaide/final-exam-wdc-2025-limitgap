@@ -8,6 +8,8 @@ body{
     color: green;
     background-color: yellow;
     font-size: 50px;
+    justify-content: center;
+    align-items: center;
 }
 #app{
     width: 80vw;

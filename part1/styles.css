@@ -4,7 +4,7 @@ body{
     color: green;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-h1{
+.move-heading{
     color: white;
     background-color: yellow;
     position: relative;

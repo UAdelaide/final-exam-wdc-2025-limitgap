@@ -16,7 +16,7 @@ async function connectDB() {
 }
 connectDB();
 
-app.get('/', (req, res) => res.send('API is working!'));
+app.get('/', (req, res) => res.send('Express'));
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
 
 app.get('/api/dogs', async (req, res) => {

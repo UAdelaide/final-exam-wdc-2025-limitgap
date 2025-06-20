@@ -3,7 +3,7 @@ const mysql= require('mysql2/promise');
 const app = express();
 const PORT=8080;
 
-const dbconfig={
+const dbConfig={
     host:'localhost',
     user:'root',
     password:'root123',

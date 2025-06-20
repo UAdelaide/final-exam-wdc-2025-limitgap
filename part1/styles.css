@@ -27,7 +27,7 @@ body{
 }
 dog-img{
     width: 90vw;
-    height: 75vw;
+    height: 90vw;
     filter: blur(2px);
 }
 button{

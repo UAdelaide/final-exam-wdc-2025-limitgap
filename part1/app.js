@@ -80,7 +80,7 @@ app.get('/api/walkrequests/open', async (req, res) => {
   try {
     const [rows5] = await db.execute(`
         SELECT WalkRequests.request_id, Dogs.name AS dog_name, WalkRequests.requested_time, WalkRequests.duration_minutes,
-        WalkRequests.location, Users.username as owner_username FROM WalkRequests`);
+        WalkRequests.location, Users.username as owner_username FROM WalkRequests JOIN `);
     res.json(books);
   } catch (err) {
     res.status(500).json({ error: 'Failed to fetch books' });

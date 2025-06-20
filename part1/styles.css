@@ -4,9 +4,10 @@ body{
     color: green;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.move-heading{
+h1{
     color: white;
     background-color: yellow;
+    font-size: 25px;
 }
 #app{
     width: 80vw;

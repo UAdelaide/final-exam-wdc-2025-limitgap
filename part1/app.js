@@ -8,6 +8,15 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
+const mysql = require('mysql2/promise');
+
+const dbConfig = {
+  host: 'localhost',
+  user: 'root',
+  password: '',
+  database: 'DogWalkService'
+};
+
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));

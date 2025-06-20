@@ -12,7 +12,9 @@ const mysql = require('mysql2/promise');
 
 const dbConfig={
     host='localhost',
-    user:
+    user='root',
+    password='',
+    
 }
 
 app.use(logger('dev'));

@@ -13,7 +13,7 @@ body{
     margin: 10px;
     border: 4px red;
     background: darkslategrey;
-    animation: flicker-bg;
+    animation: flicker-bg 0.2s infinite steps(1,end);
 }
 dog-img{
     width: 180px;

@@ -24,7 +24,7 @@ let db;
     });
 
     // Create the database if it doesn't exist
-    await connection.query('');
+    await connection.query('CREATE DATABASE IF NOT EXISTS DogWalk');
     await connection.end();
 
     // Now connect to the created database

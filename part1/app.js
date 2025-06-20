@@ -39,7 +39,7 @@ let db;
       CREATE TABLE IF NOT EXISTS Users (
         user_id INT AUTO_INCREMENT PRIMARY KEY,
         username VARCHAR(50) UNIQUE NOT NULL,
-        email VARCHAR(100)
+        email VARCHAR(100) UNIQUE NOT NULL
       )
     `);
 

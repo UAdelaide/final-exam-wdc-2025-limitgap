@@ -57,8 +57,8 @@ let db;
 
     // Insert data if table is empty
 
-    const [rows] = await db.execute('SELECT COUNT(*) AS count FROM Users');
-    if (rows[0].count === 0) {
+    const [rows2] = await db.execute('SELECT COUNT(*) AS count FROM Users');
+    if (rows2[0].count === 0) {
       await db.execute(`
         INSERT INTO Users (username, email, password_hash, role) VALUES
         ('alice123', 'alice@example.com', 'hashed123', 'owner'),
@@ -69,8 +69,8 @@ let db;
       `);
     }
 
-    const [rows] = await db.execute('SELECT COUNT(*) AS count FROM Dogs');
-    if (rows[0].count === 0) {
+    const [rows3] = await db.execute('SELECT COUNT(*) AS count FROM Dogs');
+    if (rows3[0].count === 0) {
       await db.execute(`
         INSERT INTO Dogs (owner_id, name, size) VALUES
         ((SELECT user_id FROM Users WHERE username='alice123'), 'Max', 'medium'),
@@ -88,10 +88,10 @@ let db;
 // Route to return books as JSON
 app.get('/api/dogs', async (req, res) => {
   try {
-    const [rows] = await db.execute(`
+    const [rows4] = await db.execute(`
         SELECT Dogs.name AS dog_name, Dogs.size AS size, Users.username AS owner_username
         FROM Dogs JOIN Users ON Dogs.owner_id = Users.user_id`);
-    res.json(rows);
+    res.json(rows4);
   } catch (err) {
     res.status(500).json({ error: 'Failed to fetch dogs' });
   }

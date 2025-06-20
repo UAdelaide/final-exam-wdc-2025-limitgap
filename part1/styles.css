@@ -5,9 +5,9 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .main-head{
-    color: white;
+    color: green;
     background-color: yellow;
-    font-size: 25px;
+    font-size: 50px;
 }
 #app{
     width: 80vw;

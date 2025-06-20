@@ -6,8 +6,8 @@ body{
 }
 .main-head{
     color: green;
-    background-color: yellow;
-    font-size: 50px;
+    background-color: rgb(131, 131, 51);
+    font-size: 75px;
     justify-content: center;
     align-items: center;
 }

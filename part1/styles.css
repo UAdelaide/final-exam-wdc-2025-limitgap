@@ -7,12 +7,6 @@ body{
 .move-heading{
     color: white;
     background-color: yellow;
-    position: relative;
-    animation: move-heading 3s linear infinite alternative;
-}
-@keyframes move-heading {
-    from {left:0;}
-    to {left:60vw}
 }
 #app{
     width: 80vw;

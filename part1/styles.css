@@ -15,6 +15,9 @@ body{
     background: darkslategrey;
     animation: flicker-bg 0.2s infinite steps(1,end);
 }
+@keyframes flicker-bg {
+    
+}
 dog-img{
     width: 180px;
     height: 180px;

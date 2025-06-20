@@ -13,7 +13,7 @@ body{
     margin: 10px;
     border: 4px red;
     background: darkslategrey;
-    animation: flicker-bg 0.2s infinite steps(1,end);
+    animation: flicker-bg 0.2s infinite linear;
 }
 @keyframes flicker-bg {
     0%   { background: #039c2c; }

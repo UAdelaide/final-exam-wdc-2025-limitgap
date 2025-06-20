@@ -9,6 +9,9 @@ h1{
     background-color: yellow;
     animation: move-heading 3s linear infinite alternative;
 }
+@keyframes move-heading {
+    from {}
+}
 #app{
     width: 80vw;
     margin: 10px;

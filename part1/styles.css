@@ -23,5 +23,7 @@ button{
     cursor: pointer;
 }
 .dog-pic-div{
+    display: flex;
+    justify-content: center;
     
 }

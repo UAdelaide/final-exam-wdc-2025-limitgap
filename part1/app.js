@@ -33,6 +33,6 @@ module.exports = app;
 app.get('/api/dogs', async(this.request, res)) => {
     try{
         const[rows] = await db.execute(`
-            SELECT Dogs.name AS dog_name, Dogs.size AS size, `)
+            SELECT Dogs.name AS dog_name, Dogs.size AS size, Users.username AS `)
     }
 }

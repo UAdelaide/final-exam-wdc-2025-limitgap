@@ -15,3 +15,5 @@ async function connectDB() {
 }
 connectDB();
 
+app.get('/', (req, res) => res.send('API is working!'));
+app.listen(PORT, () => console.log(`Server started on port ${PORT}`));

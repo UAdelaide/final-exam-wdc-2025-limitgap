@@ -8,3 +8,10 @@ const dbconfig={
     password:'root123',
     database:'DogWalkService'
 };
+
+let db;
+async function connectDB() {
+  db = await mysql.createConnection(dbConfig);
+}
+connectDB();
+

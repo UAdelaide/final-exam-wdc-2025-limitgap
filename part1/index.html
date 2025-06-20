@@ -40,7 +40,7 @@
                                 const match = this.dogPic.match(/breeds\/([^\/]+)/);
                                 this.dogBreed=match?match[1].replace(/-/g,' ') : Mixed;
                                 const names = ['Spike', 'Princess', 'Max', 'Bella', 'Ben'];
-                                this.dogName = names[Math.floor(math.random)]
+                                this.dogName = names[Math.floor(math.random()*names.length())]
                             })
                     }
                 }

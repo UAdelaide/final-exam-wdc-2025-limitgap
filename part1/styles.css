@@ -18,6 +18,9 @@ body{
 @keyframes flicker-bg {
     0%   { background: #039c2c; }
     14%  { background: #1e8fff; }
+    28%  { background: #ffea00; }
+    42%  { background: #ff0e0e; }
+    57%  { background: #e67cff; }
     
 }
 dog-img{

@@ -46,7 +46,9 @@
           body: JSON.stringify({username, password})
         });
 
-        
+        const result = await reposnse.json();
+
+        if (result)
       }
     })
   </script>

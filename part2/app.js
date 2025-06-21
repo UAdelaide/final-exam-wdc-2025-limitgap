@@ -28,6 +28,6 @@ app.post('/api/login', async(req,res)) => {
     con.release();
 
     if (users.length=0){
-        return res.json({success:false, message: ""})
+        return res.json({success:false, message: "User does"})
     }
 }

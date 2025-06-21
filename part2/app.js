@@ -19,4 +19,4 @@ app.use('/api/users', userRoutes);
 module.exports = app;
 
 const pool=require('./models/db');
-app.post(/api/login', async)
+app.post(/api/login', async(req,res))

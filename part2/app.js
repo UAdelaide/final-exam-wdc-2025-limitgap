@@ -1,5 +1,6 @@
 const express = require('express');
 const path = require('path');
+const pool=require('./models/db');
 require('dotenv').config();
 
 const app = express();
@@ -18,7 +19,6 @@ app.use('/api/users', userRoutes);
 // Export the app instead of listening here
 module.exports = app;
 
-const pool=require('./models/db');
 app.post('/api/login', async (req, res) => {
     const{username,password} = req.body;
 

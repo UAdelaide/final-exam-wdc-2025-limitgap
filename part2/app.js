@@ -40,8 +40,7 @@ app.post('/api/login', async (req, res) => {
     } catch(err){
         console.error("Login error: ", err);
         res.json({success:false, message:"Server error"});
-    }
-    finally {if (con) con.release();}
+    }finally {if (con) con.release();}
 });
 
 // Export the app instead of listening here

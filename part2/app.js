@@ -20,5 +20,6 @@ module.exports = app;
 
 const pool=require('./models/db');
 app.post('/api/login', async(req,res)) => {
-    const{email,passwd} = req.body
+    const{email,passwd} = req.body;
+    
 }

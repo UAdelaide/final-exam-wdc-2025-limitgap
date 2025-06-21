@@ -18,4 +18,5 @@ app.use('/api/users', userRoutes);
 // Export the app instead of listening here
 module.exports = app;
 
-const pool=require('./models/db')
+const pool=require('./models/db');
+app.post

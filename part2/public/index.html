@@ -49,7 +49,9 @@
         const result = await reposnse.json();
 
         if (result.success){
-          if (result.role="owner")
+          if (result.role="owner"){
+            window.location.href="owner-dashboard.html"
+          }
         }
       }
     })

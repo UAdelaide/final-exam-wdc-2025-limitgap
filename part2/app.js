@@ -20,11 +20,11 @@ module.exports = app;
 
 const pool=require('./models/db');
 app.post('/api/login', async(req,res)) => {
-    const{username,passwd} = req.body;
+    const{username,password} = req.body;
 
     const con=await pool.getConnection();
 
-    const[users] = await con.query('SELECT * FROM Users WHERE username = ? AND password_hash = ?', [username, passwd]);
+    const[users] = await con.query('SELECT * FROM Users WHERE username = ? AND password_hash = ?', [username, password]);
     con.release();
 
     if (users.length=0){

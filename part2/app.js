@@ -16,9 +16,6 @@ const userRoutes = require('./routes/userRoutes');
 app.use('/api/walks', walkRoutes);
 app.use('/api/users', userRoutes);
 
-// Export the app instead of listening here
-module.exports = app;
-
 app.post('/api/login', async (req, res) => {
     const{username, password} = req.body;
     let con;
@@ -45,3 +42,6 @@ app.post('/api/login', async (req, res) => {
         res.json({success:false, message:"Server error"});
     }
 });
+
+// Export the app instead of listening here
+module.exports = app;

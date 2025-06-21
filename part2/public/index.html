@@ -48,6 +48,8 @@
                 headers: {"Content-Type": "application/json"},
                 body: JSON.stringify({username, password})
             });
+
+        const result = await response.json();
         }
     </script>
 </body>

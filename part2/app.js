@@ -24,5 +24,5 @@ app.post('/api/login', async(req,res)) => {
 
     const con=await pool.getConnection();
 
-    const[users] = await con.query('SELECT * FROM Users WHERE ')
+    const[users] = await con.query('SELECT * FROM Users WHERE email = ? AND')
 }

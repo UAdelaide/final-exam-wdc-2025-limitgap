@@ -33,6 +33,8 @@ app.post('/api/login', async (req, res) => {
         }
         const user = users[0];
 
-        req.sesse
+        req.session.user = {
+            user_id:user.user_id.
+        }
         res.json({success:true, role:user.role});
 }

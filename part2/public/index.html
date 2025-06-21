@@ -52,7 +52,10 @@
         const result = await response.json();
         console.log("Login response:", result);
 
-        
+        if (result.success){
+            localStorage.setItem("isLoggedIn", "true");
+            localStorage.setItem("isLoggedIn", "true");
+        }
         }
     </script>
 </body>

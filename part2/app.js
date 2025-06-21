@@ -22,13 +22,15 @@ module.exports = app;
 app.post('/api/login', async (req, res) => {
     const{username, password} = req.body;
     let con;
-    con=await pool.getConnection();
 
-    const[users] = await con.query('SELECT * FROM Users WHERE username = ? AND password_hash = ?', [username, password]);
+    try{
+        con=await pool.getConnection();
 
-    if (users.length===0){
-        return res.json({success:false, message: "User record does not match in database"});
-    }
-    const user = users[0];
-    res.json({success:true, role:user.role});
+        const[users] = await con.query('SELECT * FROM Users WHERE username = ? AND password_hash = ?', [username, password]);
+
+        if (users.length===0){
+            return res.json({success:false, message: "User record does not match in database"});
+        }
+        const user = users[0];
+        res.json({success:true, role:user.role});
 }

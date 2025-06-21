@@ -40,5 +40,7 @@ app.post('/api/login', async (req, res) => {
         };
 
         res.json({success:true, role:user.role});
-    } catch(err){}
+    } catch(err){
+        console.error("Login error: ", err);
+    }
 }

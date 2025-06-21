@@ -25,7 +25,6 @@ app.post('/api/login', async (req, res) => {
     con=await pool.getConnection();
 
     const[users] = await con.query('SELECT * FROM Users WHERE username = ? AND password_hash = ?', [username, password]);
-    con.release();
 
     if (users.length===0){
         return res.json({success:false, message: "User record does not match in database"});

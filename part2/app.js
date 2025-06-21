@@ -44,4 +44,4 @@ app.post('/api/login', async (req, res) => {
         console.error("Login error: ", err);
         res.json({success:false, message:"Server error"});
     }
-}
+});

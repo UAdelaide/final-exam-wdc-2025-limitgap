@@ -22,5 +22,7 @@ const pool=require('./models/db');
 app.post('/api/login', async(req,res)) => {
     const{email,passwd} = req.body;
 
-    const con=await pool.getConnection
+    const con=await pool.getConnection();
+
+    const[users] = 
 }

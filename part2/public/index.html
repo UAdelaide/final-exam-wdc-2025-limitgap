@@ -41,7 +41,9 @@
       const password = document.getElementById("loginPassword").value();
 
       try{
-        const reposnse = await fetch('/api/login', )
+        const reposnse = await fetch('/api/login', {
+          method: "POST", 
+        })
       }
     })
   </script>

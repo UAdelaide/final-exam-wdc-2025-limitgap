@@ -27,5 +27,7 @@ app.post('/api/login', async(req,res)) => {
     const[users] = await con.query('SELECT * FROM Users WHERE email = ? AND password_hash = ?', [email, passwd]);
     con.release();
 
-    if (users.length)
+    if (users.length=0){
+        return res.json({})
+    }
 }

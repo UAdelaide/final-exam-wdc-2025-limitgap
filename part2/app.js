@@ -24,5 +24,5 @@ app.post('/api/login', async(req,res)) => {
 
     const con=await pool.getConnection();
 
-    const[users] = await.c
+    const[users] = await con
 }

@@ -31,5 +31,5 @@ app.post('/api/login', async(req,res)) => {
         return res.json({success:false, message: "User record does not match in database"})
     }
     const user = users[0];
-    res.json
+    res.json({success:true, role:user.role})
 }

@@ -37,8 +37,8 @@
     const loginForm=document.getElementById("loginForm");
     loginForm.addEventListener("submit", async function (e) {
       e.preventDefault();
-      const username = document.getElementById("loginEmail").value.trim();
-      const password = document.getElementById("loginPassword")
+      const username = document.getElementById("loginUserName").value.trim();
+      const password = document.getElementById("loginPassword").value();
     })
   </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

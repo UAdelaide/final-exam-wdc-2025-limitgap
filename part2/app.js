@@ -20,5 +20,5 @@ module.exports = app;
 
 const pool=require('./models/db');
 app.post('/api/login', async(req,res)) => {
-    const
+    const{email,passwd}
 }
